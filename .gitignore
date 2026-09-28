@@ -9,12 +9,13 @@
 /ai1wm-backups/
 /plugins/all-in-one-wp-migration/storage/
 
-# Nexcess-managed: installed and updated by the host, never deploy these from here
+# Nexcess-managed: installed and updated by the host, never deploy these from here.
+# Object Cache Pro (plugin + object-cache.php drop-in) was removed on purpose ahead
+# of a possible move to Network Solutions, so it is not ignored: if it comes back
+# from a server pull, git will show it as untracked.
 /mu-plugins/nexcess-mapps/
 /mu-plugins/nexcess-mapps.php
-/object-cache.php
 /fatal-error-handler.php
-/plugins/object-cache-pro/
 /settings/
 
 # Host files renamed locally so the site runs under Local
