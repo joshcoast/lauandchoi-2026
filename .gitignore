@@ -1,0 +1,28 @@
+# Repo root is wp-content. WordPress core and wp-config.php (DB credentials, salts)
+# live one level up and are deliberately outside version control.
+
+# Media library and runtime/generated files: content, not code
+/uploads/
+/cache/
+/upgrade/
+/upgrade-temp-backup/
+/ai1wm-backups/
+/plugins/all-in-one-wp-migration/storage/
+
+# Nexcess-managed: installed and updated by the host, never deploy these from here
+/mu-plugins/nexcess-mapps/
+/mu-plugins/nexcess-mapps.php
+/object-cache.php
+/fatal-error-handler.php
+/plugins/object-cache-pro/
+/settings/
+
+# Host files renamed locally so the site runs under Local
+*.disabled
+
+# Local dev tooling (Claude preview proxy/config)
+/.claude/
+
+# OS, editor and log noise
+.DS_Store
+*.log

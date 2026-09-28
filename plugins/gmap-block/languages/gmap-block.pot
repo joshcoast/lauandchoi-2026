@@ -1,0 +1,190 @@
+# Copyright (C) 2024 Zakaria Binsaifullah
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gmap Block 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gmap-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-08-21T07:20:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: gmap-block\n"
+
+#. Plugin Name of the plugin
+#: gmap-block.php
+msgid "Gmap Block"
+msgstr ""
+
+#. Description of the plugin
+#: gmap-block.php
+msgid "A custom Gutenberg block to display google map in Gutenberg editor."
+msgstr ""
+
+#. Author of the plugin
+#: gmap-block.php
+msgid "Zakaria Binsaifullah"
+msgstr ""
+
+#. Author URI of the plugin
+#: gmap-block.php
+msgid "https://www.makegutenblock.com"
+msgstr ""
+
+#: src/constants/index.js:16
+msgid "Desktop"
+msgstr ""
+
+#: src/constants/index.js:25
+msgid "Tablet"
+msgstr ""
+
+#: src/constants/index.js:34
+msgid "Mobile"
+msgstr ""
+
+#: src/constants/index.js:47
+#: src/constants/index.js:117
+#: src/controls/border-control/dimension.js:103
+#: src/controls/res-box-control/dimension.js:103
+msgid "Left"
+msgstr ""
+
+#: src/constants/index.js:69
+#: src/constants/index.js:138
+msgid "Center"
+msgstr ""
+
+#: src/constants/index.js:91
+#: src/constants/index.js:160
+#: src/controls/border-control/dimension.js:77
+#: src/controls/res-box-control/dimension.js:77
+msgid "Right"
+msgstr ""
+
+#: src/constants/index.js:183
+#: src/controls/border-control/dimension.js:64
+#: src/controls/res-box-control/dimension.js:64
+msgid "Top"
+msgstr ""
+
+#: src/constants/index.js:204
+msgid "Middle"
+msgstr ""
+
+#: src/constants/index.js:226
+#: src/controls/border-control/dimension.js:90
+#: src/controls/res-box-control/dimension.js:90
+msgid "Bottom"
+msgstr ""
+
+#: src/constants/index.js:251
+msgid "Outset"
+msgstr ""
+
+#: src/constants/index.js:255
+msgid "Inset"
+msgstr ""
+
+#: src/constants/index.js:263
+msgid "Solid"
+msgstr ""
+
+#: src/constants/index.js:272
+msgid "Dashed"
+msgstr ""
+
+#: src/constants/index.js:281
+msgid "Dotted"
+msgstr ""
+
+#: src/constants/index.js:298
+#: src/constants/index.js:310
+msgid "Classic"
+msgstr ""
+
+#: src/constants/index.js:302
+#: src/constants/index.js:314
+msgid "Gradient"
+msgstr ""
+
+#: src/constants/index.js:356
+msgid "H1"
+msgstr ""
+
+#: src/constants/index.js:360
+msgid "H2"
+msgstr ""
+
+#: src/constants/index.js:364
+msgid "H3"
+msgstr ""
+
+#: src/constants/index.js:368
+msgid "H4"
+msgstr ""
+
+#: src/constants/index.js:372
+msgid "H5"
+msgstr ""
+
+#: src/constants/index.js:376
+msgid "H6"
+msgstr ""
+
+#: src/constants/index.js:380
+msgid "Div"
+msgstr ""
+
+#: src/constants/index.js:384
+msgid "P"
+msgstr ""
+
+#: src/constants/index.js:388
+msgid "Span"
+msgstr ""
+
+#: src/controls/border-control/index.js:94
+msgid "Border"
+msgstr ""
+
+#: src/controls/border-control/index.js:193
+#: src/controls/border-control/index.js:236
+msgid "Normal"
+msgstr ""
+
+#: src/controls/border-control/index.js:205
+msgid "Style"
+msgstr ""
+
+#: src/controls/border-control/index.js:242
+msgid "Hover"
+msgstr ""
+
+#: src/controls/color-control/index.js:31
+#: src/controls/colors-control/index.js:35
+#: src/controls/reset-btn/index.js:18
+msgid "Reset"
+msgstr ""
+
+#: src/controls/color-control/index.js:46
+msgid "Theme Colors"
+msgstr ""
+
+#: src/controls/colors-control/index.js:64
+#: src/controls/colors-control/index.js:112
+msgid "Colors Palette"
+msgstr ""
+
+#: src/blocks/gmap/block.json
+msgctxt "block title"
+msgid "Google Map"
+msgstr ""
+
+#: src/blocks/gmap/block.json
+msgctxt "block description"
+msgid "Display a Google Map"
+msgstr ""
