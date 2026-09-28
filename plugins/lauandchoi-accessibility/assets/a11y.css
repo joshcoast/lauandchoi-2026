@@ -35,6 +35,15 @@ body :focus-visible {
 }
 
 /*
+ * GeneratePress's back-to-top button and GTranslate's switcher are both pinned
+ * bottom-right, and the switcher covered the button completely, so keyboard
+ * users could focus it without seeing it (2.4.11). Lift it clear of the switcher.
+ */
+.generate-back-to-top {
+	bottom: 90px;
+}
+
+/*
  * Links in running text must not rely on colour alone (1.4.1): the link colour
  * (#406080) is only 2.87:1 against body text (#111). Scoped to text-level
  * elements so GenerateBlocks buttons and navigation keep their styling.
