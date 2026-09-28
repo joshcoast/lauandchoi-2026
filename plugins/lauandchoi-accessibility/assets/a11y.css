@@ -1,0 +1,45 @@
+/**
+ * Lau & Choi accessibility fixes (WCAG 2.2 AA).
+ */
+
+/*
+ * Keyboard focus ring (2.4.7, 1.4.11).
+ * A navy ring with a white halo stays visible on both the light sections and the
+ * navy header/hero/footer. GeneratePress otherwise leaves this to each browser's
+ * default ring, which is faint on dark backgrounds, and IvyForms removes it.
+ */
+body :focus-visible {
+	outline: 3px solid #1f2d3d !important;
+	outline-offset: 0 !important;
+	box-shadow: 0 0 0 6px #fff !important;
+}
+
+/*
+ * IvyForms: ring the visible field box instead of the borderless <input> inside it.
+ * Needs to out-specify IvyForms' own `.ivyforms-input.el-input .el-input__wrapper.is-focus` !important reset.
+ */
+[class*="ivyforms-form-wrapper"] .ivyforms-input.el-input .el-input__wrapper:focus-within {
+	outline: 3px solid #1f2d3d !important;
+	box-shadow: 0 0 0 6px #fff !important;
+}
+
+[class*="ivyforms-form-wrapper"] .el-input__wrapper :focus-visible {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/* GTranslate's switcher clips overflow, so draw its ring inside the edge. */
+.gt_float_switcher :focus-visible {
+	outline-offset: -3px !important;
+	box-shadow: none !important;
+}
+
+/*
+ * Links in running text must not rely on colour alone (1.4.1): the link colour
+ * (#406080) is only 2.87:1 against body text (#111). Scoped to text-level
+ * elements so GenerateBlocks buttons and navigation keep their styling.
+ */
+:is(.entry-content, .entry-summary, .comment-content, .widget) :is(p, li, dd, td, figcaption, blockquote) a:not(.gb-text, .wp-block-button__link, .button) {
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
