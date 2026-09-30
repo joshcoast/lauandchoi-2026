@@ -1,0 +1,27 @@
+// Editor only. The photo is a button that opens the Media Library.
+.lc-staff-card__photo-button {
+	display: block;
+	width: 100%;
+	max-width: 340px;
+	padding: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+
+	&:hover .lc-staff-card__photo,
+	&:focus-visible .lc-staff-card__photo {
+		opacity: 0.85;
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--wp-admin-theme-color, #3858e9);
+		outline-offset: 2px;
+	}
+}
+
+.lc-staff-card__placeholder.components-placeholder {
+	min-height: 0;
+	max-width: 340px;
+	aspect-ratio: 340 / 440;
+	margin-bottom: 1.5rem;
+}

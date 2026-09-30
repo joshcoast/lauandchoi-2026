@@ -1,0 +1,1 @@
+.lc-staff-grid{display:grid;gap:3rem;grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:1024px){.lc-staff-grid{grid-template-columns:1fr}}.lc-staff-grid__appender{align-self:start;justify-self:start}

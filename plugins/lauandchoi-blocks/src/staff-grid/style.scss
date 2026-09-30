@@ -1,0 +1,17 @@
+// Two cards per row on desktop, one per row from tablet down.
+// Matches the GenerateBlocks grid this block replaced on the Staff page.
+.lc-staff-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 3rem;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+// Editor only: keep the "+" appender from taking a whole grid cell.
+.lc-staff-grid__appender {
+	align-self: start;
+	justify-self: start;
+}

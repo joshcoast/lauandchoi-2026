@@ -1,0 +1,13 @@
+{
+	"name": "lauandchoi-blocks",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Custom blocks for the Lau & Choi site.",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^35.0.0"
+	}
+}

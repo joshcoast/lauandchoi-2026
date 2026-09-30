@@ -1,0 +1,43 @@
+// Photo beside the text on desktop, stacked on phones.
+// Matches the GenerateBlocks cards this block replaced on the Staff page.
+.lc-staff-card {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 2rem;
+	align-items: start;
+
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+// Every photo is cropped to the 340x440 portrait shape the originals use,
+// so a new upload of any size still lines up with the rest.
+.lc-staff-card__photo {
+	display: block;
+	width: 100%;
+	max-width: 340px;
+	height: auto;
+	aspect-ratio: 340 / 440;
+	object-fit: cover;
+	margin-bottom: 1.5rem;
+}
+
+.lc-staff-card__name {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: inherit;
+	color: inherit;
+	font-family: inherit;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+.lc-staff-card__title {
+	margin: 0 0 1rem;
+}
+
+.lc-staff-card__bio {
+	margin: 0 0 1.5rem;
+}

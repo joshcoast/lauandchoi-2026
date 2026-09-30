@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lauandchoi/staff-card",
+  "version": "1.0.0",
+  "title": "Staff Card",
+  "category": "design",
+  "icon": "id",
+  "description": "One staff member: photo, name, job title and a short bio.",
+  "keywords": [
+    "staff",
+    "person",
+    "bio"
+  ],
+  "textdomain": "lauandchoi-blocks",
+  "parent": [
+    "lauandchoi/staff-grid"
+  ],
+  "attributes": {
+    "mediaId": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "jobTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "bio": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "reusable": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

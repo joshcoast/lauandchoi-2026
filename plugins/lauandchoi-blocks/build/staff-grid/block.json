@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lauandchoi/staff-grid",
+  "version": "1.0.0",
+  "title": "Staff Grid",
+  "category": "design",
+  "icon": "groups",
+  "description": "A grid of staff members. Add, remove or drag Staff Cards to change who appears and in what order.",
+  "keywords": [
+    "staff",
+    "team",
+    "people",
+    "bio"
+  ],
+  "textdomain": "lauandchoi-blocks",
+  "supports": {
+    "html": false,
+    "align": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
